@@ -42,6 +42,11 @@ export default function Login() {
         <h2 className="text-lg font-semibold text-foreground mb-1">Welcome back</h2>
         <p className="text-sm text-muted-foreground mb-6">Sign in to access the dashboard</p>
 
+        <div className="bg-primary/10 text-primary text-xs px-4 py-2 rounded-lg mb-4 border border-primary/20">
+          💡 Demo mode: Enter <strong>any email</strong> and <strong>any password</strong> to sign in.
+          Use an email containing "admin" for admin access.
+        </div>
+
         {error && <div className="bg-destructive/15 text-destructive text-sm px-4 py-2 rounded-lg mb-4">{error}</div>}
 
         <form onSubmit={handleSubmit} className="space-y-4">
